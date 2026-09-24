@@ -1,0 +1,58 @@
+{
+  "schema": "KAPPA_ARCHITECTURE_V1",
+  "farm_id": 159,
+  "name": "KAPPA",
+  "status": "SCAFFOLDED_NOT_TRAINED",
+  "greek_constellation": true,
+  "role_id": "FEASIBILITY_ENVELOPE_SOLVER",
+  "mission": "Compute hard and soft constraint intersections, feasible regions, incompatibilities and boundary conditions.",
+  "boundary": "Does not perform final verification; ELYSIUM does.",
+  "shared_base_family": "CEREBRON_GREEK_SHARED_BASE",
+  "runtime_changed": false,
+  "campaign": {
+    "passes": 10,
+    "compression": "LOCAL_CAPSULE_TO_HYPERFUNNEL"
+  },
+  "layers": [
+    {
+      "id": "L0",
+      "name": "BASE_MODEL"
+    },
+    {
+      "id": "L1",
+      "name": "KAPPA_CORE"
+    },
+    {
+      "id": "L2",
+      "name": "ADAPTERS"
+    },
+    {
+      "id": "L3",
+      "name": "MEMORY_INTERFACE"
+    },
+    {
+      "id": "L4",
+      "name": "PI_SEARCH_INTERFACE"
+    },
+    {
+      "id": "L5",
+      "name": "TOOLS_AND_FARMS"
+    },
+    {
+      "id": "L6",
+      "name": "CEREBRON_BOUNDARY"
+    },
+    {
+      "id": "L7",
+      "name": "AFAH_REDTEAM"
+    }
+  ],
+  "rules": [
+    "REALITY>COHERENCE",
+    "EVIDENCE>CONFIDENCE",
+    "CLAIM<=EVIDENCE",
+    "M6_NEVER_IN_TRAIN",
+    "RUNTIME_FREEZE",
+    "SHARED_BASE!=INDEPENDENT_EVIDENCE"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "schema": "KAPPA_BENCHMARK_V1",
+  "status": "FROZEN_TEMPLATE_NO_RESULTS",
+  "role_id": "FEASIBILITY_ENVELOPE_SOLVER",
+  "domains": [
+    "constraint_intersection",
+    "feasible_region",
+    "boundary_conditions",
+    "incompatibility_detection",
+    "slack_analysis",
+    "constraint_tradeoffs"
+  ],
+  "m6_rule": "M6_NEVER_IN_TRAIN",
+  "modes": [
+    "BASE_MODEL_ALONE",
+    "KAPPA_PRETRAIN_SCAFFOLD",
+    "KAPPA_TRAINED",
+    "KAPPA_PLUS_MINIMAL_COALITION"
+  ],
+  "metrics": [
+    "role_accuracy",
+    "critical_error_rate",
+    "calibration",
+    "transfer",
+    "regression",
+    "latency",
+    "provenance_completeness"
+  ],
+  "result_status": "NO_EXECUTED_BASELINE_YET"
+}
